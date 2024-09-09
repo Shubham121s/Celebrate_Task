@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    margin: 40px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ #img{
+    display: none;
+}
+
+.nav {
+    height: 30px;
+    background-color: gray;
+    display: flex;
+
+    justify-content: start;
+}
+
+.dot1 {
+    color: red;
+    font-weight: 900;
+    font-size: 200%;
+    justify-items: center;
+}
+
+.dot2 {
+    color: yellow;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.dot3 {
+    color: green;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.box1 {
+    height: 500px;
+    width: 50%;
+
+}
+
+.abc {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right {
+    display: flex;
+}
+
+.right p {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.right button {
+    border-radius: 20px;
+    padding: 7px;
+    margin-right: 20px;
+    border: 1px solid green;
+    background-color: white;
+}
+
+.mid {
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+
+
+}
+
+.content {
+    display: grid;
+    gap: 5px;
+    justify-items: center;
+    margin-bottom: 15px;
+    color: grey;
+}
+
+.p1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.in {
+    width: 400px;
+    padding-bottom: 20px;
+    padding-left: 4px;
+    padding-top: 5px;
+    border: 1px solid white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+#btn {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid green;
+    color: white;
+    background-color: green;
+    font-size: large;
+
+}
+
+#btn:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.log {
+    display: flex;
+    gap: 20px;
+   justify-content: center;
+   margin-top: 20px;
+   color: green;
+}
+
+.box2 {
+    height: 520px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Additional styles for animation */
+.animate-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomIn 1s forwards ease-in-out;
+    z-index: 10;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
